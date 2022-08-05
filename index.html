@@ -42,7 +42,7 @@
                 <div class="track">
                     <div class="content">&nbsp;New website coming soon - New website coming soon - New website coming
                         soon - New website coming soon - New website coming soon - New website coming soon - New website
-                        coming soon - New website coming soon -</div>
+                        coming soon - New website coming soon - New website coming soon - New website coming soon - </div>
                 </div>
             </div>
         </header>
@@ -68,7 +68,7 @@
                 <div class="track">
                     <div class="content">&nbsp;New website coming soon - New website coming soon - New website coming
                         soon - New website coming soon - New website coming soon - New website coming soon - New website
-                        coming soon - New website coming soon -</div>
+                        coming soon - New website coming soon - New website coming soon - New website coming soon - </div>
                 </div>
             </div>
         </footer>
@@ -78,11 +78,11 @@
 </html>
 
 <script>
-    let vh = window.innerHeight * 0.01;
-    document.querySelector('.sense').style.setProperty('--vh', `${vh}px`);
+    function initHeight() {
+        let vh = window.innerHeight * 0.01;
+        document.querySelector('.sense').style.setProperty('--vh', `${vh}px`);
+    }
 
-    window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
+    window.addEventListener('resize', () => { initHeight() });
+    screen.orientation.addEventListener("change", () => { initHeight() });
 </script>
