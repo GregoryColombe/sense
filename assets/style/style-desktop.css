@@ -42,12 +42,16 @@
 }
 
 .sense main div .logo {
-  width: 100%;
+  width: 12rem;
   height: 6rem;
   content: " ";
   background-image: url("./../img/logo.png");
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.sense main div .logo:hover {
+  cursor: pointer;
 }
 
 .sense main div a {

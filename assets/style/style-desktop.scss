@@ -28,12 +28,15 @@
             text-align: center;
 
             .logo {
-                width: 100%;
+                // width: 100%;
+                width: 12rem;
                 height: 6rem;
                 content: " ";
                 background-image: url("./../img/logo.png");
                 background-size: 100%;
                 background-repeat: no-repeat;
+
+                &:hover { cursor: pointer; }
             }
 
             a {
