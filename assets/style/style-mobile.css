@@ -3,4 +3,10 @@
     font-size: calc(100vw / 375 * 10);
   }
 }
+
+@media screen and (orientation: landscape) {
+  .sense {
+    height: 100%;
+  }
+}
 /*# sourceMappingURL=style-mobile.css.map */
